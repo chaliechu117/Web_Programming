@@ -9,6 +9,7 @@
 3. 시험 공부 미리하기  
 
 '''python  
+
         class Orca:  
         def __init__(self):
             self.lazy = True
