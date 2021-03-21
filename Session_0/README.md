@@ -9,14 +9,14 @@
 3. 시험 공부 미리하기  
 
 '''python  
-class Orca:
-    def __init__(self):
-        self.lazy = True
+    class Orca:
+        def __init__(self):
+            self.lazy = True
 
-    def teach(self):
-        self.lazy = false
-        return "fast lecture"
-print("더 열심히 살아야겠습니다. 코드 넣기 연습입니다.)  
+        def teach(self):
+            self.lazy = false
+            return "fast lecture"
+    print("더 열심히 살아야겠습니다. 코드 넣기 연습입니다.)  
 '''
 
 Result:
