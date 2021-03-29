@@ -1,0 +1,296 @@
+.phone{
+    border: 1px solid black;
+    width: 330px;
+    height: 600px;
+    background-color: black;
+    border-radius: 15px;
+}
+.first-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3px;
+}
+.time{
+    color: white;
+    font-size: 10px;
+    margin-left: 10px;
+}
+.battery-num{
+    color: white;
+    font-size: 5px;
+    margin-left: 220px;
+    
+}
+.battery{
+    color: white;
+    font-size: 10px;
+    margin-right: 10px;
+}
+.battery img{
+    width: 20px;
+    height: auto;
+    object-fit: cover;
+    margin-top: 5px;
+}
+
+.box1{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 328px;
+    height:30px;
+}
+
+.left-arrow{
+    margin-left: 10px;
+}
+.left-arrow img{
+    width: 10px;
+    height: auto;
+    object-fit: cover;
+}
+
+.id{
+    color:white;
+    font-size:large;
+    font-weight: lighter;
+    margin-left: 50px;
+}
+
+.box1-right{
+    
+    width: 70px;
+    height: 25px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bell img{
+    width: 20px;
+    height: auto;
+    object-fit: cover;
+}
+.threedot img{
+    width: 20px;
+    height: auto;
+    object-fit: cover;
+    
+}
+
+.box2{
+    
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 328px;
+    height:100px;
+}
+.id-pic{
+    border: 3px double rgb(114, 104, 100);
+    border-radius:70%;
+    width: 75px;
+    height:75px;
+    margin-right:0px;
+    overflow: hidden;
+}
+.id-pic img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.small-box2{
+    
+    width:200px;
+    height:98px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.number-box{
+    
+    display: flex;
+    color:white;
+    justify-content: space-evenly;
+    margin-bottom:0px;
+    font-size:14px;
+}
+.kor-box{
+    
+    display: flex;
+    color:white;
+    justify-content: space-evenly;
+    margin-top:0px;
+    font-size:10px;
+}
+.post{
+    margin-left: -5px;
+}
+
+.following{
+    margin-right:-10px;
+}
+.box3{
+    height:100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.textbox{
+    margin-left: 10px;
+    color:white;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size:11px;
+    line-height: 20px;
+    
+}
+.textbox1{
+    margin-left: 10px;
+    color:white;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size:11px;
+    line-height: 20px;
+    margin-top: 0px;
+}
+
+.textbox2{
+    margin-left: 10px;
+    color:white;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size:11px;
+    
+}
+.box3 p{
+    margin-top:0px;
+    margin-bottom: 0px;
+}
+.box4{
+    display:flex;
+    color:white;
+    height:20px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:10px;
+    font-size:7px;
+
+}
+.box4 img{
+    width: auto;
+    height: 7px;
+    object-fit: cover;
+}
+.f-button{
+    display: flex;
+    border:1.5px solid gray;
+    border-radius: 7px;
+    height:25px;
+    width:140px;
+    justify-content: center;;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 5px;
+    
+}
+
+.f-button h1{
+    font-size:7px;
+    margin-right:5px;
+}
+.m-button{
+    display: flex;
+    border:1.5px solid gray;
+    border-radius: 7px;
+    height:25px;
+    width:140px;
+    justify-content: center;;
+    align-items: center;
+    margin-right:5px;
+}
+.m-button h1{
+    font-size:7px;
+    margin-right:5px;
+}
+.down-button{
+    display: flex;
+    border:1.5px solid gray;
+    border-radius: 7px;
+    height:25px;
+    width:30px;
+    justify-content: center;;
+    align-items: center;
+    margin-right: 10px;
+    margin-left:0px;
+}
+
+.box5{
+    display:flex;
+    height:20px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.box5 img{
+    width: auto;
+    height: 20px;
+    object-fit: cover;
+}
+.table-icon img{
+    width: auto;
+    height: 15px;
+    object-fit: cover;
+}
+
+.box6{
+    height:229px;
+    display:flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+.wrapper{
+    display:flex;
+  }
+  
+.box {
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    border-radius: 0px;
+    
+}
+
+.box img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+  
+.box7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper1{
+    
+    height:30px;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:5px;
+}
+.wrapper1 img{
+    width: auto;
+    height: 20px;
+    object-fit: cover;
+}

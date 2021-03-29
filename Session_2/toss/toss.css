@@ -1,0 +1,83 @@
+* {
+    font-family: "Spoqa Han Sans Neo", "sans-serif";
+  }
+
+  .boss{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      
+  }
+
+  .main{
+      width: 65%;
+      display: flex;
+      justify-content: center;
+      align-items: center;    
+      margin-top: 10%; 
+}
+
+  .right{
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .right-top h2{
+      font-size:xx-large;
+      font-weight: bolder;
+      color:#454f5d;
+      margin:0;
+  } 
+  .right-center h6{
+      color:#454f5d;
+      margin-top:50px;
+      margin-bottom: 0px;
+  } 
+  .right-bottom h6{
+      color:#3182f6;
+      margin-top:10px;
+  }
+
+  .left{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 40%;
+  }
+
+  .left-row{
+      display:flex;
+      width:100%;
+      height: 60px;
+      box-shadow: 0 30px 60px 12px rgba(0, 0, 33, 0.05), 0 4px 24px 0 rgba(0, 0, 33, 0.05), 0 0 1px 0 rgba(0, 0, 33, 0.09);
+      border-radius: 10px;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      margin-top: 15px;
+  }
+  .bank-info{
+      display:flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  img{
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+  }
+  .name{
+    font-size: 15px;
+    font-weight: 500;
+    color: #666;
+    margin-right: 10px;
+  }
+
+  .price {
+    font-weight: 600;
+    font-size: 13px;
+    color: #454f5d;
+    opacity: 0.9;
+  }
