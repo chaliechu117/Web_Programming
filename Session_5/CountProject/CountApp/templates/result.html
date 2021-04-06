@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel='stylesheet' type='text/css' href="{% static 'result.css' %}">
+    <title> Result</title>
+</head>
+<body>
+    
+    <div class="for-center">
+        <span class="text-rainbow">
+            결과창입니다!!!
+        </span>
+        
+        <div class="box">
+            <h1>입력한 텍스트: {{text}}</h1>
+            <h2>글자수: {{total_len}}</h2>
+            <h3>공백제외: {{no_blank_len}}</h3>
+            <h4>단어수: {{no_word}}</h4>
+        </div>
+    </div>
+</body>
+</html>
