@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+    <section class='left'>
+        <h1>추창욱 블로그에 오신것을 환영합니다!</h1>
+        <p>원하시는 카테고리에 자유롭게 글을 남겨주세요!</p>
+    </section>
+
+    <section class='right'>
+        <section class='contents'>
+            <a class='movie' href="{% url 'movie' %}">영화({{movie_num}})</a>
+            <a class='drama' href="{% url 'drama' %}">드라마({{drama_num}})</a>
+            <a class='programming' href="{% url 'programming' %}">프로그래밍({{programming_num}})</a>
+        </section>
+        <section class='writing'>
+            <a href="{%	url 'new' %}">게시글 작성하기</a>
+        </section>
+    </section>
+
+</body>
+</html>
