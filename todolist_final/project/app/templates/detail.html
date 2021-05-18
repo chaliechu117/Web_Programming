@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block css %} {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'detail.css' %}">
+{% endblock %}
+
+{% block content %}
+    <section class="container">
+        <section class="posted">
+            <section class="posted-title">
+                <p>{{ post.title }}</p>
+            </section>
+            <section class="posted-content">
+                <h3>세부 내용</h3>
+                <p>{{ post.content }}</p>
+            </section>
+            <section class="posted-dtime">
+                <h3>마감일</h3>
+                <p>{{ post.date }}</p>
+            </section>
+            
+            <section class="customization">
+                <a href="{% url 'home' %}">메인화면</a>
+                {% if user.is_authenticated and post.author.pk == user.pk %}
+                    <a href="{% url 'edit' post.pk %}">수정</a>
+                    <a href="{% url 'delete' post.pk %}">삭제</a>
+                {% endif %}
+            </section>
+            
+            {% if user.is_authenticated %}
+            <form method="POST">
+                {% csrf_token %}
+                <input type="text" name="content" placeholder="댓글을 입력해주세요">
+                <button type="submit">댓글 쓰기</button>
+            </form>
+            {% endif %}
+            
+            {% for comment in post.comments.all %}
+                <li>{{ comment.content }}</li>
+                {% if user.is_authenticated and comment.author.pk == user.pk %}
+                <a href="{% url 'delete_comment' post.pk comment.pk %}">삭제</a>
+                {% endif %}
+            {% endfor %}
+        </section>
+    </section>
+{% endblock %}  

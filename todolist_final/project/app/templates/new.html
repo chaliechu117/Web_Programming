@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block css %} {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'new.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="new-container">
+            
+            <form action="" method="POST">
+                <div class="main-title">
+                    새로운 일
+                </div>
+                {% csrf_token %}
+                
+                    
+                <input type="text" id="title" name="title" placeholder="할 일을 입력해주세요">
+              
+                    
+                <textarea id="content" name="content" cols='30' rows='10' placeholder="세부 내용을 입력해주세요"></textarea>
+            
+                    
+                <input type="date" name="date" placeholder="마감 날짜">
+            
+                <button id="submit" type="submit">작성하기</button>
+            </form>
+        </div>
+    </div>
+{% endblock %} 

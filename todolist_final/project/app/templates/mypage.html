@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block css %} {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'mypage.css' %}">
+{% endblock %}
+
+{% block content %}
+    <section class="container">
+        <section class="posted">
+            <section class="title">
+                <p>마이페이지</p>
+            </section>
+            
+            <section class="content">
+                <ul>
+                    {% for post in posts %}
+                        {% if user.is_authenticated and post.author.pk == user.pk %}
+                            <li>
+                                <a class="postname" href="{% url 'detail' post.pk %}">{{ post.title }}</a>
+                                <p id="deadline">( {{ post.date }}까지 )</p>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </section> 
+            <section class="content">
+                <ul>
+                    {% for comment in comments %}
+                        {% if user.is_authenticated and comment.author.pk == user.pk %}
+                            <li>
+                                <a class="mycomment" href="{% url 'detail' comment.post.pk %}">{{ comment.content }}</a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </section> 
+        </section>
+    </section>
+{% endblock %}    
+    

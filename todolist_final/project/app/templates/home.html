@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block css %} {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}">
+{% endblock %}
+
+{% block content %}
+    <section class="container">
+        <section class="posted">
+            <section class="title">
+                <p>할일 메모장</p>
+            </section>
+            
+            <section class="content">
+                <ul>
+                    {% for post in posts %}
+                    <li>
+                        <a class="postname" href="{% url 'detail' post.pk %}">{{ post.title }}</a>
+                        <p id="deadline">( {{ post.date }}까지 )</p>
+                    </li>
+                    {% endfor %}
+                    <a class="write-button" href="{% url 'new' %}">글 쓰러가기</a>
+                </ul>
+            </section> 
+        </section>
+    </section>
+{% endblock %}    
+    
