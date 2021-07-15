@@ -1,0 +1,34 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#weatherBox {
+    font-size: 15pt;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid black;
+    align-items: center;
+    margin-top: 5%;
+    flex-direction: column;
+  }
+
+#weatherBox2 {
+    font-size: 15pt;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid black;
+    align-items: center;
+    margin-top: 5%;
+    flex-direction: column;
+  }
+
+#weatherBox3 {
+    font-size: 15pt;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid black;
+    align-items: center;
+    margin-top: 5%;
+    flex-direction: column;
+  }

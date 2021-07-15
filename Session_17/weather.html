@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="weather.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>도시명을 입력하세요(in English)</h2>
+  <div id="submit_box">
+    <input type="text" name="city" id="city">
+    <button id="submit">search</button>
+  </div>
+  
+  <div id="weatherBox"></div>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script type="module" src="./weather.js"></script>
+  
+  <h2>위도와 경도를 입력하세요(숫자만)</h2>
+  <p>해당하는 위도와 경도의 두 도시 날씨 정보 제공</p>
+  <div id="submit_box">
+    <input type="text" name="lat" id="lat">
+    <input type="text" name="lon" id="lon">
+    <button id="insert">insert</button>
+  </div>
+  <div id="weatherBox2"></div>
+  <div id="weatherBox3"></div>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script type="module" src="./weather.js"></script>
+</body>
+
+</html>
